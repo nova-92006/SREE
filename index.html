@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SREEKALA | Mehndi & Makeup Artists</title>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#faf7f2;
+    color:#333;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:#3b0d11;
+}
+
+.logo{
+    font-family:'Playfair Display', serif;
+    font-size:32px;
+    color:#d4af37;
+    letter-spacing:2px;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:35px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:400;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#d4af37;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:95vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url("../images/poster.jpg") center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-family:'Playfair Display', serif;
+    font-size:60px;
+    letter-spacing:2px;
+}
+
+.hero-content p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 32px;
+    background:#d4af37;
+    color:#3b0d11;
+    text-decoration:none;
+    font-weight:500;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* SERVICES */
+
+.services{
+    padding:80px 60px;
+    text-align:center;
+}
+
+.services h2{
+    font-family:'Playfair Display', serif;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.service-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin-top:15px;
+    font-family:'Playfair Display', serif;
+}
+
+.card p{
+    padding:15px;
+    font-size:15px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#3b0d11;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+}
+.horizontal-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.horizontal-gallery img {
+    min-width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* Scrollbar thodi premium banane ke liye */
+.horizontal-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.horizontal-gallery::-webkit-scrollbar-thumb {
+    background: #c49a6c;
+    border-radius: 10px;
+}
+/* SERVICES SECTION */
+
+.services {
+    padding: 80px 60px;
+    background: #fff8f2;
+    text-align: center;
+}
+
+.services h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin-bottom: 50px;
+    color: #3b0d11;
+}
+
+/* Container */
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Card Design */
+.service-card {
+    width: 320px;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.4s;
+    position: relative;
+}
+
+/* Hover effect */
+.service-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+}
+
+/* Image */
+.service-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+/* Card Text */
+.service-card h3 {
+    margin-top: 18px;
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #3b0d11;
+}
+
+.service-card p {
+    padding: 12px 20px 25px;
+    font-size: 15px;
+    color: #555;
+}
+
+/* Gold border animation */
+.service-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, gold, #d4af37);
+    top: 0;
+    left: 0;
+}
+
+
+    </style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header>
+    <nav class="navbar">
+        <h2 class="logo">SREEKALA</h2>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="quote.html">Get a Quote</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="horizontal-gallery">
+    <img class="slide active" src="SREE/images/a593b0c3569e6458b166253cd8abd218.jpg" alt="">
+    <img class="slide" src="SREE/images/cover_02.jpg" alt="">
+    <img class="slide" src="SREE/images/fShwseyATBQh70t7wzr2Zo2KhJm3fA3fxYC8dmBL.jpg" alt="">
+</section>
+
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+
+    <div class="hero-content">
+        <h1>Where Beauty Meets Art 🎨</h1>
+
+        <p>
+            Book Professional Mehndi & Makeup Artists for your Special Day
+        </p>
+
+        <a href="quote.html" class="btn">Book Now</a>
+    </div>
+
+</section>
+
+
+<!-- ===== SERVICES SECTION ===== -->
+<section class="services">
+
+    <h2>Our Services</h2>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <img src="SREE/images/Arabic-Mehendi-Designs-25.jpg" alt="">
+            <h3>Mehndi Artists</h3>
+            <p>Bridal, Arabic, Traditional & Modern Mehndi Designs</p>
+        </div>
+
+        <div class="service-card">
+            <img src="SREE/images/pretty-girl-unusual-hairstyle-bright-makeup-red-lips-manicure-design-beauty-face-art-nails-pretty-girl-unusual-119338489.webp" alt="">
+            <h3>Makeup Artists</h3>
+            <p>Bridal, Party, Engagement & HD Makeup Services</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2026 SREEKALA. All Rights Reserved.</p>
+</footer>
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function changeSlide() {
+    slides[index].classList.remove("active");
+    
+    index = (index + 1) % slides.length;
+    
+    slides[index].classList.add("active");
+}
+
+setInterval(changeSlide, 3000); // 3 sec me change
+</script>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
